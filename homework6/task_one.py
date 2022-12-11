@@ -14,4 +14,5 @@ def distance(*args):
 
 
 result = distance((2, 2), (1, 1), (3, 2), (5, 7))
+result = distance((1, 2), (1, 1), (3, 2))
 print(result)
