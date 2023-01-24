@@ -46,22 +46,20 @@ class School:
             for x in student.great:
                 if x == 5 or x == 6:
                     count += 1
-                if count == 5:
-                    result.append(student)
+            if count == 5:
+                result.append(student)
         return result
 
     def get_students(self, group_number):
         self.group_number = group_number
         for student in self.students:
             if self.group_number == student.group_number:
-                self.students.append(student.surname)
-                self.students.append(student.name)
+                self.students.append(student)
 
     def get_students_without_exams(self):
         for student in self.students:
             if sum(student.great) / 5 >= 7:
-                self.students.append(student.surname)
-                self.students.append(student.name)
+                self.students.append(student)
 
 
 t1 = Student(1, 'Aleksey', '109', [5, 6, 8, 8, 7])
