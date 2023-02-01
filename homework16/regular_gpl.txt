@@ -1,0 +1,2 @@
+grep 'GNU\|GPL\|License\.' gpl-3.0.txt
+grep -E '^[A-Z].*\.$' gpl-3.0.txt
