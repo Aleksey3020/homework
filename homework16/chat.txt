@@ -1,0 +1,3 @@
+cat chat | grep 'AM\|PM' | cut -d ' ' -f 1,2 | sort | uniq
+cat chat | grep 'AM\|PM' | cut -d ' ' -f 1,2 | sort | uniq | wc -l
+cat chat | grep '?'
